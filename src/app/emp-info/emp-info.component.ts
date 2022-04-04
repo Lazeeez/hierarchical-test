@@ -13,9 +13,10 @@ export class EmpInfoComponent {
 
   ngOnInit() {
     d3.csv(
-      'https://raw.githubusercontent.com/Lazeeez/anything/main/fin.csv'
+      'https://raw.githubusercontent.com/Lazeeez/anything/main/fin2.csv'
     ).then((data) => {
       this.data = data;
+      console.log(data)
     });
   }
 }
